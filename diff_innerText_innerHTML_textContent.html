@@ -1,0 +1,23 @@
+<div id="test">Hello       I am <span>inner span</span>  !!!</div>
+
+// Try edit message
+const data = {
+  message: 'Hello world',
+}
+
+$('#msg').html(data.message)
+
+console.log(data)
+document.write("hello");
+console.log("hello");
+//window.alert("e");
+var a=document.getElementsByTagName("p").innerHTML="hello Komal";
+document.write(a);
+/*
+innerText: "This element contains an inner span." :point_left: Just the text, trimmed and space-collapsed.
+innerHtml: " This element     contains <span>an inner span</span>. " :point_left: All spacing and inner element tags.
+textContent: " This element     contains an inner span. " :point_left: Spacing, but no tags.
+*/
+console.log(document.getElementById("test").innerText);
+console.log(document.getElementById("test").innerHTML);
+console.log(document.getElementById("test").textContent);
